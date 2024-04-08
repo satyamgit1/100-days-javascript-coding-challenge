@@ -1,2 +1,2 @@
-str = str.split();
-console.log(str);
+console.log(longestCommonPrefix(["flower", "flow", "flight"]));
+console.log(longestCommonPrefix(strs));
