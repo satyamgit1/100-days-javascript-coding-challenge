@@ -33,7 +33,7 @@ function longestCommonPrefix(strs) {
         } else {
             break; // Break the loop if the characters don't match
         }
-    }
+    }p
     return prefix;
 }
 
