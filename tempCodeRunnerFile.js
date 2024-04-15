@@ -1,3 +1,1 @@
-// const startsWith = (str,substr) =>{
-// //  return str.startsWith(substr);
-// }
+1st method
