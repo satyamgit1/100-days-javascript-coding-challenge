@@ -10,11 +10,12 @@ const calculateMean = (arr) => {
         return 0;
     }
     
-    let sum = 0;
-    for (let num of arr) {
-        sum += num;
-    }
-    
+    // let sum = 0;
+    // for (let num of arr) {
+    //     sum += num;
+    // }
+    let sum = arr.reduce((acum,curElem) => acum + curElem,0);
+    console.log(sum);
     return sum / arr.length;
 }
 
