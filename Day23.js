@@ -7,6 +7,9 @@ function countOccurrences(numbers) {
     for (let element of numbers) {
       counts[element] = (counts[element] || 0) + 1;
     }
+    // counts[1] = 1;
+    // counts[2] = 1+counts[2]; = 2
+    
   
     // Return the counts object containing the counts of each element
     return counts;
