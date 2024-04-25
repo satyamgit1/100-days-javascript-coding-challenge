@@ -10,14 +10,14 @@
 //* Constraints:
 //? a and b will be integers.
 //? a will be less than or equal to b
-
-const numberRange = (a, b) => {
-  let n = [];
-  for (let i = a; i <= b; i++) {
-    n.push(i);
+const numberRange = (a, b, arr = []) => {
+  if (a > b) {
+    return arr;
   }
-  return n;
+  arr.push(a);
+  return numberRange(a + 1, b, arr);
 };
 
 console.log(numberRange(0, 5)); // Output: [0, 1, 2, 3, 4, 5]
 console.log(numberRange(-2, 2)); // Output: [ -2, -1, 0, 1, 2 ]
+
