@@ -25,3 +25,25 @@ function findPairs(arr, targetSum) {
   const targetSum = 9;
   console.log(findPairs(arr, targetSum)); // Output: [[3, 6], [1, 8], [5, 4]]
   
+
+
+
+//   function findPairs(arr, targetSum) {
+//     const pairs = [];
+  
+//     for (let i = 0; i < arr.length - 1; i++) {
+//       for (let j = i + 1; j < arr.length; j++) {
+//         if (arr[i] + arr[j] === targetSum) {
+//           pairs.push([arr[i], arr[j]]);
+//         }
+//       }
+//     }
+  
+//     return pairs;
+//   }
+  
+//   // Test the function
+//   const arr = [3, 1, 5, 8, 2, 6];
+//   const targetSum = 9;
+//   console.log(findPairs(arr, targetSum)); // Output: [[3, 6], [1, 8], [5, 4]]
+  
