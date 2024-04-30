@@ -1,19 +1,31 @@
-/**
- * Coding Challenge: Random Hex Color Generator
- * Write a function randomHexColor that generates a random hexadecimal color code each time it is called.
- * The function should return a string representing the random color code in the format '#RRGGBB',
- * where RR, GG, and BB are two-digit hexadecimal numbers representing the red, green, and blue components of the color, respectively.
- * Your challenge is to implement the randomHexColor function using JavaScript and ensure that it produces a valid hexadecimal color code with a length of 7 characters (including the # symbol).
- * Constraints:
- * - The output color code should always start with # followed by six hexadecimal characters (RRGGBB).
- * - The function should not take any parameters.
- * - The generated color codes should be unique and evenly distributed across the entire range of possible hexadecimal color codes.
- * Hint: Use toString(16) to convert the random number into a hexadecimal string representation.
- */
+//* Programming Challenge: Remove Duplicates from an Array
 
-function randomHexColor() {
-    return `#${Math.random().toString(16).slice(2, 8)}`;
-   }
-   
-   console.log(randomHexColor());
-   
+//? Write a function removeDuplicates that takes an array of elements as input and returns a new array with duplicate elements removed.
+//? Your task is to implement the removeDuplicates function using JavaScript and ensure that the returned array contains only unique elements from the input array.
+//? The order of elements in the output array should be the same as the original array, with the first occurrence of each unique element preserved.
+// First Method: RemoveDuplicates
+// const removeDuplicates = (arr) => {
+//  let duplicate = new Set(arr);
+//  return duplicate;
+
+// };
+// Second Method: RemoveDuplicates
+
+// function removeDuplicates(arr) {
+//   let uniqueArray = [];
+//   for(let i = 0; i < arr.length; i++) {
+//     if(uniqueArray.indexOf(arr[i])  === -1){
+//         uniqueArray.push(arr[i]);
+//     }
+    
+//   }
+//   return uniqueArray;
+// }
+//Third Method: RemoveDuplicates
+
+const removeDuplicates = (arr) => {
+    return arr.filter((value,index) => arr.indexOf(value) === index);
+}
+
+console.log(removeDuplicates([1, 2, 3, 3, 4, 5, 6]));
+console.log(removeDuplicates(["a", "b", "c", "d", "a"]));
