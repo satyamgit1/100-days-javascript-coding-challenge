@@ -14,7 +14,7 @@
 // function removeDuplicates(arr) {
 //   let uniqueArray = [];
 //   for(let i = 0; i < arr.length; i++) {
-//     if(uniqueArray.indexOf(arr[i])  === -1){
+//     if(uniqueArray.indexOf(arr[i])  === -1){ // -1 not element found
 //         uniqueArray.push(arr[i]);
 //     }
     
