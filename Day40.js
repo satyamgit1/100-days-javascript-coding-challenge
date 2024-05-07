@@ -18,3 +18,7 @@ const generateBarChart = (arr) =>{
 };
 
 console.log(generateBarChart([5,3,9,2]));
+
+
+
+
