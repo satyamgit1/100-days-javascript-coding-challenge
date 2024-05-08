@@ -1,8 +1,6 @@
 //* Programming Challenge: Validate a Credit Card Number (Luhn Algorithm)
-//*-
 
 //? Write a function to validate credit card numbers using the Luhn algorithm.
-
 //* Requirements:
 //? Write a function named validateCreditCard that takes a credit card number as a string.
 //? The function should return true if the number is valid according to the Luhn algorithm, and false otherwise.
@@ -55,8 +53,8 @@ const validateCreditCard = (str) => {
       return currDigits;
     })
     .reduce((accum, currElem) => accum + Number(currElem), 0); //  Add all the digits together.
+    console.log(doubleNum);
   return doubleNum % 10 === 0;
 };
-
 console.log(validateCreditCard("4539 1488 0343 6467")); // Output: true
 console.log(validateCreditCard("8273 1232 7352 0569")); // Output: false
