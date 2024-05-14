@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CC LAB</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0D1117;
+            color: #C9D1D9;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: #161B22;
+            color: #C9D1D9;
+        }
+        .navbar a {
+            color: #C9D1D9;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+        .navbar a:hover {
+            color: #58A6FF;
+        }
+        .container {
+            padding: 30px;
+        }
+        .new-project-btn {
+            background-color: #238636;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .new-project-btn:hover {
+            background-color: #2EA043;
+        }
+        .works-table {
+            width: 100%;
+            margin-top: 30px;
+            border-collapse: collapse;
+        }
+        .works-table th, .works-table td {
+            padding: 15px;
+            text-align: left;
+        }
+        .works-table th {
+            background-color: #21262D;
+            color: #8B949E;
+        }
+        .works-table td {
+            background-color: #161B22;
+            color: #C9D1D9;
+        }
+        .works-table a {
+            color: #58A6FF;
+            text-decoration: none;
+        }
+        .works-table a:hover {
+            text-decoration: underline;
+        }
+        .works-table .delete-icon {
+            color: #F85149;
+            cursor: pointer;
+        }
+        .ordering {
+            margin-top: 20px;
+            font-size: 1em;
+        }
+        .ordering select {
+            background-color: #161B22;
+            color: #C9D1D9;
+            border: 1px solid #30363D;
+            padding: 5px;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="navbar">
+        <div>
+            <span style="font-size: 1.5em; font-weight: bold;">CC LAB</span>
+        </div>
+        <nav>
+            <a href="#">Coding Problems</a>
+            <a href="#">About</a>
+            <a href="#">Satyam</a>
+            <a href="#">Logout</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <button class="new-project-btn">NEW PROJECT</button>
+        <h2>My Works</h2>
+        <div class="ordering">
+            Ordering:
+            <select>
+                <option value="new-first">New First</option>
+                <option value="old-first">Old First</option>
+            </select>
+        </div>
+        <table class="works-table">
+            <thead>
+                <tr>
+                    <th>NAME</th>
+                    <th>LANGUAGE</th>
+                    <th>CREATED</th>
+                    <th>ACTION</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#">try</a></td>
+                    <td>html</td>
+                    <td>21/03/2024</td>
+                    <td><span class="delete-icon">🗑️</span></td>
+                </tr>
+                <tr>
+                    <td><a href="#">section</a></td>
+                    <td>html</td>
+                    <td>04/02/2024</td>
+                    <td><span class="delete-icon">🗑️</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
