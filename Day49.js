@@ -2,7 +2,7 @@
 //*
 //* Programming Challenge: Date Validation
 //? Write a function named isValidDate that takes a single string input representing a date and determines if it is a valid date in the format
-// MM/DD/YYYY. The valid date range should be from January 1, 1900, to December 31, 2099.
+//* MM/DD/YYYY. The valid date range should be from January 1, 1900, to December 31, 2099.
 
 //todo Requirements:
 //* Format Check: The date must strictly follow the MM/DD/YYYY format. Ensure that slashes (/) are used as separators.
