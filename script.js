@@ -10,7 +10,7 @@ document.getElementById('registrationForm').addEventListener('submit', function(
     const usernameRegex = /^[a-zA-Z0-9_]{3,15}$/;
     const phoneRegex = /^[0-9]{10}$/;
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
+    const passwordRegexxx = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
 
     if (!usernameRegex.test(username)) {
         alert('Username must be 3-15 characters long and can contain letters, numbers, and underscores.');
