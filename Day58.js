@@ -10,6 +10,7 @@
 // *Input: [0, 0, 0]
 
 //* Output: [[0, 0, 0]]
+
 function threeSum(nums) {
     nums.sort((a, b) => a - b); // Sort the array
     const result = [];
