@@ -1,6 +1,6 @@
 // use map to print all array item in paragraph tag let arr = ["banana","apple","orange"];
 
-
+hello this is my practice questions
 // const arr = ["banana", "apple", "orange"];
 
 // const listItems = arr.map(item => `<li><p>${item}</p></li>`).join('\n');
